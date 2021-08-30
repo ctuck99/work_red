@@ -15,3 +15,12 @@ print("You're merge fields are:\n")
 for x in document.get_merge_fields():
     print(x)
 print("\n")
+
+document.merge(
+    DO160_S4_Cat='A4',
+    DO160_S7_Cat='B',
+    Product_Description='75 INCH MONITOR WITH AVB AUDIO',
+    Part_Number='U750A103',
+)
+
+document.write('text-output.docx')
